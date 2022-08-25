@@ -1,0 +1,16 @@
+.container{
+    padding-top: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+li{
+    list-style: none;   
+}

@@ -1,0 +1,19 @@
+<section><!--ESTUDIOS-->
+    <article class="estudios" >
+        <h1>Estudios</h1>
+        <ul class="carreras">
+            <li *ngFor="let estudios of estudiosList">
+                <div class="carrera">
+                    <div class="img__carrera">
+                        <img [src]="estudios.img" alt="">
+                    </div>
+                    <div class="desc__carrera">
+                        <h4>{{estudios.title}}</h4>
+                        <p class="time">{{estudios.time}}</p>
+                        <p>{{estudios.description}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul> 
+    </article>
+</section>

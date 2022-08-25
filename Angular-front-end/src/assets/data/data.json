@@ -1,0 +1,86 @@
+{
+        "title":"Hola!",
+        "text":"Soy Santiago Torres Lorem Ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nisi neque error perspiciatis praesentium deserunt ipsum ratione! Ex velit omnis animi, officiis sed sunt. Deserunt totam soluta sapiente a maxime.",
+        "button":"Leer más",
+        "buttonLink":"#",
+        "porfile":"/assets/img/perfil500x500.jpg",
+    
+    "ig":"#",
+    "tw":"#",
+    "exper":"Experiencia Laboral",
+    "experiencia":[
+    {
+        "title":"LB Corseteria y Lenceria",
+        "time":"2019 - 2022",
+        "description":"1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio dolor in consectetur atque quidem deserunt voluptatum omnis sunt quas quis quaerat voluptatibus aliquid, nisi autem laboriosam minus vitae rerum!",  
+        "img":"assets/img/200x200.jpg"
+    },
+    {
+        "title":"Experiencia 2",
+        "time":"2019 - 2022",
+        "description":"2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio dolor in consectetur atque quidem deserunt voluptatum omnis sunt quas quis quaerat voluptatibus aliquid, nisi autem laboriosam minus vitae rerum!",  
+        "img":"assets/img/200x200.jpg"
+    },{
+        "title":"Experiencia 2",
+        "time":"2019 - 2022",
+        "description":"2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio dolor in consectetur atque quidem deserunt voluptatum omnis sunt quas quis quaerat voluptatibus aliquid, nisi autem laboriosam minus vitae rerum!",  
+        "img":"assets/img/200x200.jpg"
+    }
+],
+"estudiosTitle":"Estudio",
+"estudios":[
+    {
+        "title":"Estudio1",
+        "time":"2019 - 2022",
+        "description":"hola",  
+        "img":"assets/img/200x200.jpg"
+    },
+    {
+        "title":"Estudio2",
+        "time":"2019 - 2022",
+        "description":"1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio dolor in consectetur atque quidem deserunt voluptatum omnis sunt quas quis quaerat voluptatibus aliquid, nisi autem laboriosam minus vitae rerum!",  
+        "img":"assets/img/200x200.jpg"
+    },
+    {
+        "title":"Estudio3",
+        "time":"2019 - 2022",
+        "description":"ashgjdg ajkwkuha uagwuagkua oauhwkug kuagwiug akugakuw kaugwku kugakwug ",  
+        "img":"assets/img/200x200.jpg"
+    }
+],
+"proyectosTitle":"Proyectos",
+"proyectos":[
+    {
+        "title":"Proyecto1",
+        "time":"2019 - 2022",
+        "description":"hola",  
+        "img":"assets/img/200x200.jpg"
+    },
+    {
+        "title":"Proyecto2",
+        "time":"2019 - 2022",
+        "description":"2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio dolor in consectetur atque quidem deserunt voluptatum omnis sunt quas quis quaerat voluptatibus aliquid, nisi autem laboriosam minus vitae rerum!",  
+        "img":"assets/img/200x200.jpg"
+    },
+    {
+        "title":"Proyecto3",
+        "time":"2019 - 2022",
+        "description":"3Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio dolor in consectetur ",  
+        "img":"assets/img/200x200.jpg"
+    }
+],
+"progreso":[{
+    "title":"Html",
+    "nivel":55
+},
+{
+    "title":"CSS",
+    "nivel":36
+},
+{
+    "title":"JavaScript",
+    "nivel":20
+}
+    
+]
+}

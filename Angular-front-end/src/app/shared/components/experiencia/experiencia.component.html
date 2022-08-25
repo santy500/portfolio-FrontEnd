@@ -1,0 +1,23 @@
+<section><!--EXPERIENCIA-->
+    <article class="experiencia">
+        <div class="titulo_experiencia">
+            <h1>Experiencia Laboral</h1>
+        </div>
+    <ul>
+        <li *ngFor="let experiencia of experienciaList">
+            <div class="info_experiencia">
+                <div class="desc__experiencia">
+                    <h4>{{experiencia.title}}</h4>
+                    <p class="time">{{experiencia.time}}</p>
+                    <p>{{experiencia.description}}</p>
+                </div>
+                <div class="img_experiencia">
+                    <img [src]="experiencia.img" alt="">
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+    
+    </article>
+</section>
