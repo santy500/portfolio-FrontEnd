@@ -1,20 +1,20 @@
 <!--PROYECTOS-->
-<section>
-    <article class="container__proyecto">
-        <h1>Proyectos</h1>
-        <ul class="fila__proyecto">
-            <li *ngFor="let proyectos of proyectosList">
-            <div class="columna__proyecto">
+<div class="proyectos">
+    <h1>PROYECTOS</h1>
+    <div class="proyecto">
+        <ul>
+            <li *ngFor="let proyecto of proyectos">
                 <div class="img__proyecto">
-                    <img [src]="proyectos.img" alt="">
+                    <img [src]="'assets/img/'+proyecto.imagen" alt="">
+                
+                    <h4>{{proyecto.nombre}}</h4>
+                    <p>{{proyecto.fecInicio}} - {{proyecto.fecFin}}</p>
+                    <p>{{proyecto.descripcion}}</p>
+                    <a [href]="proyecto.link">Ver Más</a>
                 </div>
-                <div class="desc__proyecto">
-                    <h4>{{proyectos.title}}</h4>
-                    <p>{{proyectos.time}}</p>
-                    <p>{{proyectos.description}}</p>
-                </div>
-            </div>
+            
             </li>
         </ul>
-    </article>
-</section>
+    </div>
+</div>
+    

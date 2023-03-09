@@ -1,0 +1,24 @@
+<app-crud-progreso></app-crud-progreso>
+<div class="contenedor">
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Progreso</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="for-group">
+                    <label for="">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="progreso.nombre">
+                </div>
+                <div class="for-group">
+                    <label for="">Nivel:</label>
+                    <input type="text" class="form-control" name="nivel" [(ngModel)]="progreso.nivel">
+                </div>
+                
+                <button (click)="Actualizar()" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

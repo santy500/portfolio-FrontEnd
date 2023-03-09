@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { HttpClient } from '@angular/common/http';
+
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-estudios',
@@ -8,12 +11,21 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class EstudiosComponent implements OnInit {
   estudiosList:any;
-  constructor(private datosPortfolio:PortfolioService) { }
+  estudios:any;
+  constructor(private datosPortfolio:PortfolioService, private http:HttpClient) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       this.estudiosList=data.estudios;
     });
+    
+    this.http.get(environment.apiURL+"/api/verEstudios", {responseType:"json"}).subscribe((resp:any) =>{
+      
+      this.estudios=resp;
+      
+      }
+    
+    )
   }
 
 }

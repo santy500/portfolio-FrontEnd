@@ -1,9 +1,41 @@
-<div class="container">
-<ul class="progress_bar">
-    <li *ngFor="let progreso of progresoList">
+<div class="contenedor">
+    <h1>HARD SKILLS</h1>
+    <div class="lista">
+        <ul class="progress_bar">
+    
+
+            <li *ngFor="let progreso of progresos">
+                <circle-progress
+                    [percent]='progreso.nivel'
+                    [subtitle]='progreso.nombre'
+                    [radius]="100"
+                    [outerStrokeWidth]="12"
+                    [innerStrokeWidth]="2"
+                    [outerStrokeColor]="'rgb(26, 255, 0)'"
+                    [innerStrokeColor]="'rgb(119, 0, 255)'"
+                    [animation]="true"
+                    [animationDuration]="1000"
+                    [subtitleColor]="'rgb(255, 255, 255)'"
+                    [titleColor]="'rgb(130, 130, 130)'"
+                    [subtitleFontSize]="'18'"
+                    [subtitleFontWeight]="'600'"
+                    [unitsFontSize]="'15'"
+                    [titleFontSize]="'15'"
+                ></circle-progress>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="contenedor2">
+    <h1>SOFT SKILLS</h1>
+<div class="lista">
+<ul class="progress_bar2">
+    
+    <li *ngFor="let progresoSoft of progresosSoft">
         <circle-progress
-            [percent]='progreso.nivel'
-            [subtitle]='progreso.title'
+            [percent]='progresoSoft.nivel'
+            [subtitle]='progresoSoft.nombre'
             [radius]="100"
             [outerStrokeWidth]="12"
             [innerStrokeWidth]="2"
@@ -12,11 +44,13 @@
             [animation]="true"
             [animationDuration]="1000"
             [subtitleColor]="'rgb(255, 255, 255)'"
-            [subtitleFontSize]="'19'"
+            [titleColor]="'rgb(130, 130, 130)'"
+            [subtitleFontSize]="'18'"
             [subtitleFontWeight]="'600'"
             [unitsFontSize]="'15'"
             [titleFontSize]="'15'"
         ></circle-progress>
     </li>
 </ul>
+</div>
 </div>

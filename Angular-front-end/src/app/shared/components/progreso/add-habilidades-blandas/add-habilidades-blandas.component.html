@@ -1,0 +1,24 @@
+<app-crud-habilidades-blandas></app-crud-habilidades-blandas>
+<div class="contenedor">
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Habilidades Blandas</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="for-group">
+                    <label for="">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="progresoSoft.nombre">
+                </div>
+                <div class="for-group">
+                    <label for="">Nivel:</label>
+                    <input type="text" class="form-control" name="nivel" [(ngModel)]="progresoSoft.nivel">
+                </div>
+                
+                <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

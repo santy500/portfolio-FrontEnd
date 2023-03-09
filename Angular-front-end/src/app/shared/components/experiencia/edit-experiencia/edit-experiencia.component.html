@@ -1,0 +1,35 @@
+<app-crud-experiencia></app-crud-experiencia>
+<div class="contenedor">
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Experiencia</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="for-group">
+                    <label for="">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="experiencia.nombre">
+                </div>
+                <div class="for-group">
+                    <label for="">Inicio:</label>
+                    <input type="text" class="form-control" name="fecInicio" [(ngModel)]="experiencia.fecInicio">
+                </div>
+                <div class="for-group">
+                    <label for="">Fin:</label>
+                    <input type="text" class="form-control" name="fecFin" [(ngModel)]="experiencia.fecFin">
+                </div>
+                <div class="for-group">
+                    <label for="">descripcion:</label>
+                    <input type="text" class="form-control" name="descripcion" [(ngModel)]="experiencia.descripcion">
+                </div>
+                <div class="for-group">
+                    <label for="">Url Imagen:</label>
+                    <input type="text" class="form-control" name="imagen" [(ngModel)]="experiencia.imagen">
+                </div>
+                <button (click)="ActualizarExperiencia()" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,16 +1,41 @@
-.container{
-    padding-top: 120px;
-    padding-left: 50px;
-    padding-right: 50px;
+
+.contenedor{
+    padding-top: 150px;
+    *padding-bottom: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-ul{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
 
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
 }
 
 li{
-    list-style: none;   
+    display: inline;
+}
+
+.contenedor2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contenedor2 h1{
+    text-align: center;
+    padding-top: 60px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.progress_bar2{
+    margin-bottom: 30px;
 }

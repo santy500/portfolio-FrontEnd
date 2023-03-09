@@ -1,0 +1,35 @@
+<app-crud-estudios></app-crud-estudios>
+<div class="contenedor">
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Estudio</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="for-group">
+                    <label for="">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" [(ngModel)]="estudio.nombre">
+                </div>
+                <div class="for-group">
+                    <label for="">Inicio:</label>
+                    <input type="text" class="form-control" name="fecInicio" [(ngModel)]="estudio.fecInicio">
+                </div>
+                <div class="for-group">
+                    <label for="">Fin:</label>
+                    <input type="text" class="form-control" name="fecFin" [(ngModel)]="estudio.fecFin">
+                </div>
+                <div class="for-group">
+                    <label for="">descripcion:</label>
+                    <input type="text" class="form-control" name="descripcion" [(ngModel)]="estudio.descripcion">
+                </div>
+                <div class="for-group">
+                    <label for="">Url Imagen:</label>
+                    <input type="text" class="form-control" name="imagen" [(ngModel)]="estudio.imagen">
+                </div>
+                <button (click)="Actualizar()" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

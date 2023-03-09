@@ -1,19 +1,21 @@
-<section><!--ESTUDIOS-->
-    <article class="estudios" >
-        <h1>Estudios</h1>
-        <ul class="carreras">
-            <li *ngFor="let estudios of estudiosList">
-                <div class="carrera">
+<!--ESTUDIOS-->
+    <div class="estudios" >
+        <h1>ESTUDIOS</h1>
+        <div class="carrera">
+        <ul>
+            <li *ngFor="let estudio of estudios">
+                
                     <div class="img__carrera">
-                        <img [src]="estudios.img" alt="">
+                        
+                        <img [src]="'assets/img/'+estudio.imagen" alt="">
+                        
+                        <h4>{{estudio.nombre}}</h4>
+                        <p class="time">{{estudio.fecInicio}} - {{estudio.fecFin}}</p>
+                        <p>{{estudio.descripcion}}</p>
                     </div>
-                    <div class="desc__carrera">
-                        <h4>{{estudios.title}}</h4>
-                        <p class="time">{{estudios.time}}</p>
-                        <p>{{estudios.description}}</p>
-                    </div>
-                </div>
+                    
+                
             </li>
         </ul> 
-    </article>
-</section>
+        </div>
+    </div>

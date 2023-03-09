@@ -1,0 +1,30 @@
+<app-crud-progreso></app-crud-progreso>
+<div class="contenedor">
+    <div class="card">
+        <div class="card-header">
+            <h3>Progreso</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>NIVEL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let progreso of progresos"class="text-center">
+                        <td class="column" >{{progreso.id}}</td>
+                        <td class="column" >{{progreso.nombre}}</td>
+                        <td class="column" >{{progreso.nivel}}</td>
+                        <td class="td-button">
+                            <button (click)="Editar(progreso.id)" class="btn btn-warning">Editar</button>
+                            <button (click)="Eliminar(progreso.id)" class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

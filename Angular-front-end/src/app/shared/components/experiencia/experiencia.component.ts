@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,13 +9,15 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-  experienciaList:any;
-  constructor(private datosPortfolio: PortfolioService) { }
+  trabajos:any;
+  constructor(private datosPortfolio: PortfolioService, private http:HttpClient ) { }
 
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.experienciaList=data.experiencia;
-    });
+  ngOnInit():void{
+
+    this.http.get(environment.apiURL+"/api/verTrabajos", {responseType:"json"}).subscribe((resp:any) =>{
+      this.trabajos=resp;
+      }
+    )
   }
 
 }

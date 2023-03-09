@@ -1,0 +1,43 @@
+<app-crud-info-personal></app-crud-info-personal>
+<div class="contenedor">
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Descripcion</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="for-group">
+                    <label for="">Titulo:</label>
+                    <input type="text" class="form-control" name="titulo" [(ngModel)]="descripcion.titulo">
+                </div>
+                <div class="for-group">
+                    <label for="">Descripcion:</label>
+                    <input type="text" class="form-control" name="descripcion" [(ngModel)]="descripcion.descripcion">
+                </div>
+                <div class="for-group">
+                    <label for="">Imagen:</label>
+                    <input type="text" class="form-control" name="imagen" [(ngModel)]="descripcion.imagen">
+                </div>
+                <div class="for-group">
+                    <label for="">GitHub:</label>
+                    <input type="text" class="form-control" name="github" [(ngModel)]="descripcion.github">
+                </div>
+                <div class="for-group">
+                    <label for="">Instagram:</label>
+                    <input type="text" class="form-control" name="instagram" [(ngModel)]="descripcion.instagram">
+                </div>
+                <div class="for-group">
+                    <label for="">Twitter:</label>
+                    <input type="text" class="form-control" name="twitter" [(ngModel)]="descripcion.twitter">
+                </div>
+                <div class="for-group">
+                    <label for="">Fondo de descripcion:</label>
+                    <input type="text" class="form-control" name="fondo" [(ngModel)]="descripcion.fondo">
+                </div>
+                <button (click)="Actualizar()" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

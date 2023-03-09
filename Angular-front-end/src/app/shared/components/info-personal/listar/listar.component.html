@@ -1,0 +1,41 @@
+<app-crud-info-personal></app-crud-info-personal>
+<div class="contenedor">
+    <div class="card">
+        <div class="card-header">
+            <h2>Info personal</h2>
+            <!--<app-crud-info-personal></app-crud-info-personal>-->
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <!--<th>ID</th>-->
+                        <th>TITULO</th>
+                        <th>DESCRIPCION</th>
+                        <th>IMAGEN</th>
+                        <th>GITHUB</th>
+                        <th>INSTAGRAM</th>
+                        <th>TWITTER</th>
+                        <th>FONDO DESC.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <!--<td class="column" >{{descripcion.id}}</td>-->
+                        <td class="column" >{{descripcion.titulo}}</td>
+                        <td class="column" >{{descripcion.descripcion}}</td>
+                        <td class="column" >{{descripcion.imagen}}</td>
+                        <td class="column" >{{descripcion.github}}</td>
+                        <td class="column" >{{descripcion.instagram}}</td>
+                        <td class="column" >{{descripcion.twitter}}</td>
+                        <td class="column" >{{descripcion.fondo}}</td>
+                        <td class="td-button">
+                            <button (click)="Editar(descripcion.id)" class="btn btn-warning">Editar</button>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
